@@ -142,6 +142,7 @@ export default function EditorPage() {
       "*"
     );
   };
+  const url = "https://firebase-six-xi.vercel.app/"
 
   // Copy share link
   const copyLink = () => {
@@ -211,7 +212,7 @@ export default function EditorPage() {
           <p className="flex items-center gap-2 mt-1">
             <span className="font-bold">Share Link:</span>
             <code className="font-mono text-blue-400 truncate max-w-xs">
-              {window.location.origin}/room/{roomId}
+              {url}/room/{roomId}
             </code>
             <button
               onClick={copyLink}
