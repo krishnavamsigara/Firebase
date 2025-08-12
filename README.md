@@ -31,4 +31,7 @@ You can add images to your README file using Markdown syntax.
 ### Syntax
 
 ```md
-![Alt Text](path-or-url-to-image "Optional title")
+![Home Page](https://ibb.co/B2p0DR9S)
+![Real Time Code Change](https://ibb.co/zTzfPxGx)
+
+
