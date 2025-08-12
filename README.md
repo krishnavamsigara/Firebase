@@ -1,12 +1,34 @@
-# React + Vite
+# Realtime Code Editor (React + Firebase)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A realtime collaborative code editor built with React and Firebase that synchronizes JavaScript, HTML, and CSS code live between users.  
+The console output and `console.log` messages are displayed inside a sandboxed iframe for security.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Real-time collaborative editing using Firebase Realtime Database or Firestore
+- Console output shown securely inside an iframe using `srcDoc`
+- Support for running JavaScript, HTML, and CSS code
+- Room-based sessions for multiple users
+- Ability to embed images in the editor output (via HTML `<img>` tag or Firebase Storage uploads)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## How It Works
+
+- Code changes sync live with Firebase in real-time between all users in the same room.
+- On clicking "Run", the combined code is injected into a sandboxed iframe using `srcDoc`.
+- `console.log` and errors inside the iframe are captured and displayed in the iframe console output area.
+- Images can be added by inserting `<img>` tags with URLs or uploading images to Firebase Storage and embedding their URLs.
+
+---
+
+## Adding Images to This README
+
+You can add images to your README file using Markdown syntax.
+
+### Syntax
+
+```md
+![Alt Text](path-or-url-to-image "Optional title")
